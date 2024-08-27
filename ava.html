@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片展示頁面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .sim-row {
+            display: flex;
+            justify-content: center;
+            margin: 0; /* 移除圖片之間的縫隙 */
+        }
+        .sim-row-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+        .column1, .column3 {
+            padding: 0;
+            margin: 0;
+        }
+        .column1 img, .column3 img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+            border: none; /* 移除邊框 */
+        }
+        .hoverOpacity50:hover {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sim-row displayBIG1024" data-id="1-1">
+        <div class="sim-row-box">
+            <div class="column1" data-type="image">
+                <a class="imglink" href="https://www.instagram.com/_aaaaava/">
+                    <img src="https://pics.pzcdn.tw/pazzo/IndexWidget/ee174e96-7102-4737-bb0e-ce46081b3a30.jpg" alt="Instagram Link 1">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sim-row displayBIG1024" data-id="3-1">
+        <div class="sim-row-box">
+            <div class="column3" data-type="image" edit_bg="1">
+                <a class="imglink" href="https://www.instagram.com/tv/CVYgRrvBNjP/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank">
+                    <img src="https://pics.pzcdn.tw/pazzo/IndexWidget/826471b7-d805-4459-9d5f-4a166d22c9f8.jpg" class="hoverOpacity50" alt="Instagram Link 2">
+                </a>
+            </div>
+            <div class="column3" data-type="image" edit_bg="1">
+                <a class="imglink" href="https://drive.google.com/file/d/1XcpJ3IUAi-oKBul1XkEuCsDlh8AdeHqT/view?usp=sharing">
+                    <img src="https://pics.pzcdn.tw/pazzo/IndexWidget/6dcd6a1a-8c73-4d9a-8288-09e314e35628.jpg" class="hoverOpacity50" alt="Google Drive Link">
+                </a>
+            </div>
+            <div class="column3" data-type="image" edit_bg="1">
+                <a class="imglink" href="https://www.instagram.com/reel/C4AirA-yGr8/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==">
+                    <img src="https://pics.pzcdn.tw/pazzo/EDM/20240827/3b6ca232-c4a4-46ed-a6e8-0e7232ad7ec8.jpg" class="hoverOpacity50" alt="Instagram Reel Link">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sim-row" data-id="1-1">
+        <div class="sim-row-box">
+            <div class="column1" data-type="image">
+                <img src="https://pics.pzcdn.tw/pazzo/EDM/20240827/a8b9236e-8e20-4e2a-ba10-c2ad79e71849.jpg" alt="Image 4">
+            </div>
+        </div>
+    </div>
+
+    <div class="sim-row displayBIG1024" data-id="1-1">
+        <div class="sim-row-box">
+            <div class="column1" data-type="image">
+                <img src="https://pics.pzcdn.tw/pazzo/EDM/20240827/3d390a71-14e7-49fb-9cc6-7c85f3aa21c4.jpg" alt="Image 5">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
